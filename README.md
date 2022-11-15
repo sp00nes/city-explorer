@@ -22,21 +22,21 @@
 Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: 
+Name of feature: api call
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 3hr
 
-Start time: 
+Start time: 11pm
 
-Finish time: 
+Finish time: 12pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 1hr
 
-Name of feature: 
+Name of feature: map
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1hr
 
-Start time: 
+Start time: 12:30
 
 Finish time: 
 

@@ -1,0 +1,21 @@
+body {
+  background-color: aqua;
+}
+
+form {
+  background-color: green;
+  padding: 1rem;
+}
+
+input {
+  margin-left: 20px;
+}
+
+li {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+img {
+  margin: 30px;
+}
