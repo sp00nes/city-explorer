@@ -15,14 +15,14 @@ class ExploreForm extends Component {
   handleSubmit = async (event) => {
     try {
       event.preventDefault();
-      // call api to get info
+      //call api to get info
       let locationInfo = await axios.get(`https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`);
       let forecastInfo = await axios.get(`http://localhost:3001/weather?lat=${locationInfo.data[0].lat}&lon=${locationInfo.data[0].lon}`);
-      // set var to info from api 
+      //set var to info from api 
       let cityData = locationInfo.data[0];
       let cityForecast = forecastInfo.data[0];
       let imgSrc = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${locationInfo.data[0].lat},${locationInfo.data[0].lon}&zoom=14`;
-      // send data up to parent component
+      //send data up to parent component
       this.props.getData(cityData, cityForecast, imgSrc);
       //handle error
     } catch (error) {

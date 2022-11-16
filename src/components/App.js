@@ -14,7 +14,7 @@ class App extends Component {
     }
   }
 
-  // sends data too parent
+  //sends data too parent
   getData = (cityData, cityForecast, imgSrc) => {
     this.setState({
       cityData: cityData,
