@@ -9,13 +9,15 @@ class CityInfo extends Component {
   }
 
   render() {
+    // console.log(this.props.serverData.cityCleanedUp.map((elem) => {return (`${elem.description}`)}));
+    let forecast = this.props.weatherData.cityCleanedUp.map((elem) => {return (`${elem.description}`)});
     return (
       <>
         <ul>
-          <li>Name: {this.props.cityData.display_name || ''}</li>
-          <li>latitude: {this.props.cityData.lat || ''}</li>
-          <li>Longitude: {this.props.cityData.lon || ''}</li>
-          <li>Forecast: {this.props.cityForecast.description || ''}</li>
+          <li>Name: {this.props.cityData.display_name}</li>
+          <li>latitude: {this.props.cityData.lat}</li>
+          <li>Longitude: {this.props.cityData.lon}</li>
+          <li>Forecast: {forecast}</li>
         </ul>
       </>
     );
