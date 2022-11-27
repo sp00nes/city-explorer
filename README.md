@@ -19,7 +19,9 @@
 Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-![image](./public/api-diagram.png)
+![Data Flow Diagram](./public/api-diagram.png)
+![Data Flow Diagram](./public/diagram-apicall.jpg)
+![Data Flow Diagram](./public/Screenshot%202022-11-17%20at%2012.57.24%20PM.png)
 
 ### Name of feature: api call
 

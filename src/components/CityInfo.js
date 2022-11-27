@@ -10,7 +10,7 @@ class CityInfo extends Component {
 
   render() {
     // console.log(this.props.serverData.cityCleanedUp.map((elem) => {return (`${elem.description}`)}));
-    let forecast = this.props.weatherData.cityCleanedUp.map((elem) => {return (`${elem.description}`)});
+    let forecast = this.props.weatherData.map((elem) => {return (`${elem.description}`)});
     return (
       <>
         <ul>
