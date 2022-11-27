@@ -8,9 +8,9 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      movieData: {"movieCleanedUp": []},
+      movieData: [],
       cityData: {},
-      weatherData: {"cityCleanedUp":[]},
+      weatherData: [],
       imgSrc: ``,
     }
   }
@@ -26,9 +26,9 @@ class Main extends Component {
   }
 
   render() {
-    console.log(this.state.movieData);
-    console.log(this.state.weatherData)
-    let movies = this.state.movieData.movieCleanedUp.map((elem, idx) => {return (<Movie movieData={elem} key={idx}/>)});
+    // console.log(this.state.movieData);
+    // console.log(this.state.weatherData)
+    let movies = this.state.movieData.map((elem, idx) => {return (<Movie movieData={elem} key={idx}/>)});
     return (
       <>
         <ExploreForm
